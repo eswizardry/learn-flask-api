@@ -13,9 +13,7 @@ To interact with the API, you can download the `Flask-JWT-Extended.postman_colle
 
 
 ## Create Docker image
-`docker build -t rest-apis-flask-python .`
-`docker run -dp 5005:5000 -w /app -v "$(pwd):/app" rest-apis-flask-python:latest`
+`docker build -t IMAGE_NAME .`
 
 ## To run Dockerfile locally
-`docker run -dp 5005:5000 -w /app -v "$(pwd):/app" IMAGE_NAME sh -C "flask run"`
-
+`docker run -dp 5005:5000 -w /app -v "$(pwd):/app" IMAGE_NAME sh -c "flask run"`
